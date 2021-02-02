@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>Jobs</title>
+   </head>
+   <body>
+      <!-- Header starts -->
+      <header class="page-header" id="page-header">
+         <div class="wrapper">
+            <nav class="left-nav">
+               <ul>
+                  <li><a href="index.html" title="Index">Home</a></li>
+                  <li><a href="jobs.html" title="jobs">Jobs</a></li>
+                  <li><a href="#">Company</a></li>
+               </ul>
+            </nav>
+            <div class="header-logo">
+               <a href="#"><img src="images/logo.png" alt="Logo-Cmp"></a>
+            </div>
+            <nav class="right-nav">
+               <ul>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Login</a></li>
+                  <li><a href="employee.html">Employee Login</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <!-- Header ends -->
+      <!-- Main starts -->
+      <main>
+         <!-- carousel Section starts -->
+         <!-- <section>
+            <div class="carousel">
+               <div class="carousel__item carousel__item--visible">
+                  <img src="images/ci1.jpg" alt="lake">
+               </div>
+               <div class="carousel__item">
+                  <img src="images/ci2.jpg" alt="landscape">
+               </div>
+               <div class="carousel__item">
+                  <img src="images/ci3.jpg" alt="sunset">
+               </div>
+               <div class="carousel__actions">
+                  <button id="carousel__button--prev" aria-label="previous slide">&lt;</button>
+                  <button id="carousel__button--next" aria-label="next-slide">&gt;</button>
+               </div>
+               <div style="text-align:center" class="dot__container">
+                  <span class="dot dot__active" id="1"></span>
+                  <span class="dot" id="2" ></span>
+                  <span class="dot" id="3"></span>
+               </div>
+            </div>
+         </section> -->
+         <!-- carousel Section ends -->
+         <!-- Search section starts -->
+         <section class="search-container container">
+            <h1>Welcome to India's No 1 Job Portal</h1>
+            <a href="#" onclick="openNav()" class="openbtn">Filter &#9776;</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sed nobis esse qui explicabo cupiditate quia, earum dolores consectetur eligendi eius amet voluptates, hic numquam labore rerum repellat reprehenderit quae!</p>
+            <div id="search-wrapper">
+               <label for="search">Search</label>
+               <input type="text" class="search" name="search" id="search" placeholder="Company, Position" />
+               <i class="fa fa-microphone fa-2x microf" onclick="speak('position')" tabindex="0"></i>
+               <label for="locsearch">Location</label>
+               <input type="text" class="locsearch" name="locsearch" id="locsearch" placeholder="Location" />
+               <i class="fa fa-microphone fa-2x microf" onclick="speak('loc')" tabindex="0"></i>
+               <button type="submit" class="searchbutt" id="searchbutt">Search</button>
+            </div>
+            <!-- <a href="#" class="sortbtn">Sort &#9776;</a> -->
+         </section>
+         <!-- Search section ends -->
+         <!-- Display and filter section starts -->
+         <section>
+            <div class="count container" id="count"></div>
+            
+         </section>
+         <section class="content" id="resdis">
+            <div class="filter" id="filter">
+               <a href="#" onclick="closeNav()" class="closebtn"> &times;</a>
+               <div class="show-filter" id="show-filter">
+                  <!-- show filter  -->
+               </div>
+               <label for="salrange">Salary</label>
+               <input type="range" name="salrange" id="salrange" min="0" max="50" value="0">
+               <span class="salrangevalue" id="salrangevalue">0</span>
+               <a href="#" class="filbut" id="filter_butt">Apply</a>
+            </div>
+            <!-- <a href="#" class="sortbtn">Sort &#9776;</a> -->
+            <div class="sortbtnContainer">
+               <label for="sortbtn">sortbtn</label>
+               <select class="sortbtn" id="sortbtn">
+                  <option disabled selected>Sort By</option>
+                  <option value="Salary">Salary</option>
+                  <option value="Company">Company</option>
+               </select>
+            </div>
+            <div class="list" id="list">
+            </div>
+            
+         </section>
+         <!-- Display and filter section ends -->   
+         <!-- Testimonial Section starts -->
+         <section class="container">
+            <div class="testimonials">
+               <h1>Testimonials</h1>
+               <div class="test-body">
+                  <div class="item">
+                     <img src="images/testimonials-1-120x120.jpg" alt="testimonials-1">
+                     <div class="name">Mr. Bean</div>
+                     <small class="desig">WEB DEVELOPER</small>
+                     <div class="share">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-instagram"></i>
+                     </div>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit natus minus, cum excepturi, voluptatem similique sequi repudiandae, facere dolores consequuntur odit vel nisi deserunt id nemo delectus obcaecati! Et, nihil?</p>
+                  </div>
+                  <div class="item">
+                     <img src="images/testimonials-2-120x120.jpg" alt="testimonials-2">
+                     <div class="name">Mr. Johnson</div>
+                     <small class="desig">AEM DEVELOPER</small>
+                     <div class="share"><i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-instagram"></i></div>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nulla itaque consequatur omnis atque quidem. Perspiciatis, ducimus modi? Temporibus placeat nulla qui dolores numquam doloremque corporis, nisi architecto omnis labore!</p>
+                  </div>
+                  <div class="item">
+                     <img src="images/testimonials-3-120x120.jpg" alt="testimonials-3">
+                     <div class="name">A. Dumbledoor</div>
+                     <small class="desig">JAVA Developer</small>
+                     <div class="share"><i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-instagram"></i></div>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium alias harum incidunt vero quod porro at facere provident veritatis officiis voluptatum maxime placeat id fugit libero doloribus accusamus, recusandae necessitatibus.</p>
+                  </div>
+               </div>
+               <button>View All Testimonials</button>    
+            </div>
+         </section>
+         <!-- Testimonial Section ends -->
+      </main>
+      <!-- Main ends -->
+      <aside></aside>
+      <!-- footer starts -->
+      <footer class="footer">
+         <div class="footer-col1 footer-cols">
+            <ul>
+               <li class="footer-heading"><a href="#">Item1</a></li>
+               <li><a href="#">Item2</a></li>
+               <li><a href="#">Item3</a></li>
+               <li><a href="#">Item4</a></li>
+               <li><a href="#">Item5</a></li>
+               <li><a href="#">Item6</a></li>
+               <li><a href="#">Item7</a></li>
+            </ul>
+            <div class="footer-getit">
+               <p>Get on Mobile</p>
+               <a href="#"><img src="images/getitgp.png" alt="get it on Google play"></a>
+               <a href="#"><img src="images/getitap.png" alt="get it on Apple play"></a>
+            </div>
+         </div>
+         <div class="footer-col2 footer-cols">
+            <ul>
+               <ul>
+                  <li class="footer-heading"><a href="#">Item1</a></li>
+                  <li><a href="#">Item2</a></li>
+                  <li><a href="#">Item3</a></li>
+                  <li><a href="#">Item4</a></li>
+                  <li><a href="#">Item5</a></li>
+                  <li><a href="#">Item6</a></li>
+                  <li><a href="#">Item7</a></li>
+                  <li class="footer-heading"><a href="#">Item8</a></li>
+                  <li><a href="#">Item9</a></li>
+                  <li><a href="#">Item10</a></li>
+                  <li><a href="#">Item11</a></li>
+               </ul>
+            </ul>
+         </div>
+         <div class="footer-col3 footer-cols">
+            <ul>
+               <li class="footer-heading"><a href="#">Item1</a></li>
+               <li><a href="#">Item2</a></li>
+               <li><a href="#">Item3</a></li>
+               <li><a href="#">Item4</a></li>
+               <li><a href="#">Item5</a></li>
+               <li><a href="#">Item6</a></li>
+               <li><a href="#">Item7</a></li>
+               <li class="footer-heading"><a href="#">Item8</a></li>
+               <li><a href="#">Item9</a></li>
+               <li><a href="#">Item10</a></li>
+               <li><a href="#">Item11</a></li>
+               <li><a href="#">Item12</a></li>
+            </ul>
+         </div>
+         <div class="footer-col4 footer-cols">
+            <ul>
+               <li class="footer-heading"><a href="#">Item1</a></li>
+               <li><a href="#">Item2</a></li>
+               <li><a href="#">Item3</a></li>
+               <li><a href="#">Item4</a></li>
+               <li><a href="#">Item5</a></li>
+               <li><a href="#">Item6</a></li>
+               <li><a href="#">Item7</a></li>
+            </ul>
+            <div class="footer-follow-us">
+               <p>Follow us on</p>
+               <a href="#" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+               <a href="#" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+               <a href="#" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+         </div>
+      </footer>
+      <!-- footer ends -->
+      <!-- java script file loaded -->
+      <script src="js/script.js"></script>
+   </body>
+</html>
